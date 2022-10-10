@@ -1,0 +1,86 @@
+                                          Assignment-2: Python Basics
+
+Question(1): Write a python script to add comments and print “Learning Python” on screen.
+#This is my book "single line comments
+'''my name is Ravi'''  #Multi line comments
+print("Learning python")
+
+Question(2): Write a python script to add multi line comments and print values of four variables,
+             each in a new line. Variable contains any values.
+'''Print value of four variables'''
+a=10
+b=15
+c=20
+d=25
+print(a,b,c,d,sep='\n')
+
+Question(3):Write a python script to print types of variables. Create 5 variables each of them
+containing different types of data. (like 35, True, “MySirG”,5.46, 3+4j, etc)
+a=25
+b=True
+c="Ravishankar"
+d=8.5
+e=3+7j
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+
+Question(4):Write a python script to print the id of two variables containing the same integer values.
+a=78
+b=78
+print(id(a),id(b))
+OR
+print(id(a))
+print(id(b))
+
+Question(5):Create five variables in a Python script and assign values of different data types to
+them. Write a Python script to print value, its type and id of each variable.
+a=25
+b=True
+c="Ravishankar"
+d=8.5
+e=3+7j
+print(type(a),id(a))
+print(type(b),id(b))
+print(type(c),id(c))
+print(type(d),id(d))
+print(type(e),id(e))
+
+Question(6):Write a python script to print all the keywords.
+import keyword
+print(keyword.kwlist)
+
+Question(7):On Python shell use help() function and display the list of keywords.
+help()
+help>keywords
+
+Question(8):Create two Python files A0.py and A1.py. Create a variable in A1.py and assign some
+value to it. Write a python script to import A1 module in A0 and print value of the variable created in A0.py.
+a1.py
+x=10 
+
+OR
+
+import a1
+print(a1.x)
+
+Question(9):Name the keywords, used as data in the Python script.
+Non,True,False
+
+Question(10):Write a python script to display the current date and time. First create variables to
+store date and time, then display date and time in proper format (like: 13-8-2022 and 9:00 PM).
+
+from datetime import datetime
+dt=datetime.today();
+print(dt)
+d1=dt.strftime("%d-y.m-%y and I:%M%p")
+print(d1)
+d1=dt.strftime("%B%d%y")
+print(d1)
+d1=dt.strftime("%d/%b/%Y")
+print(d1)
+
+
+
